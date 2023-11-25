@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Open Sans";
+}
+
+nav {
+  color: black;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  /* For rows, the horizontal axis is the main axis */
+  justify-content: center; /*main axis*/
+  align-items: center; /* secondary axis */
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(185, 238, 220);
+}
+
+.box:nth-child(1) {
+  background-color: red;
+}
+
+.box:nth-child(2) {
+  background-color: blue;
+}
+
+.box:nth-child(3) {
+  background-color: green;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  /* margin: 12px 12px; */
+}
+
+.box:hover {
+  background-color: bisque;
+}
+
+/* CSS Box Model */
+@media screen and (min-width: 600px) {
+  #main-container {
+    flex-direction: row;
+  }
+}
